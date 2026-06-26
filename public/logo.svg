@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297.00001 210.00001"
+   version="1.1"
+   id="svg18"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72426347"
+     inkscape:cx="13.80713"
+     inkscape:cy="563.33091"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs15" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="display:none;fill:#000000;stroke-width:0.345692"
+       id="path849"
+       cx="206.93164"
+       cy="75.960983"
+       rx="92.839607"
+       ry="76.828598" />
+    <rect
+       style="display:none;fill:#000000;stroke-width:0.264583"
+       id="rect327"
+       width="219.80319"
+       height="210.64899"
+       x="0.86904746"
+       y="-0.31108782" />
+    <text
+       xml:space="preserve"
+       style="font-size:78.5201px;fill:#2ad4ff;stroke-width:0.346412"
+       x="4.7698832"
+       y="65.730026"
+       id="text126"
+       inkscape:label="Perrijos"
+       transform="scale(0.76378112,1.3092756)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.5201px;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, ';fill:#2ad4ff;stroke-width:0.346412"
+         x="4.7698832"
+         y="65.730026"
+         id="tspan128">PERRHIJOS Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:78.3731px;fill:#000000;stroke-width:0.345763"
+       x="1.2283391"
+       y="63.037533"
+       id="text126-3"
+       inkscape:label="Perrijos"
+       transform="scale(0.76521404,1.3068239)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.3731px;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, ';fill:#000000;stroke-width:0.345763"
+         x="1.2283391"
+         y="63.037533"
+         id="tspan128-6">PERRHIJOS Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:86.4818px;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, ';fill:#87deaa;stroke-width:0.381537"
+       x="5.3597445"
+       y="138.45572"
+       id="text273-7"
+       inkscape:label="Gathijos"
+       transform="scale(0.78336233,1.2765485)"><tspan
+         sodipodi:role="line"
+         id="tspan271-5"
+         style="fill:#87deaa;stroke-width:0.381537"
+         x="5.3597445"
+         y="138.45572">GATHIJOS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:86.4818px;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, ';fill:#17280b;stroke-width:0.381537"
+       x="1.2633909"
+       y="135.98991"
+       id="text273"
+       inkscape:label="Gathijos"
+       transform="scale(0.78336234,1.2765485)"><tspan
+         sodipodi:role="line"
+         id="tspan271"
+         style="fill:#17280b;stroke-width:0.381537"
+         x="1.2633909"
+         y="135.98991">GATHIJOS</tspan></text>
+  </g>
+</svg>

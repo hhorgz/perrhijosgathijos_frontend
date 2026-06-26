@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+import { Image } from "astro:assets";
+import bannerImage from "../assets/hero_banner_cat_1.jpg";
+
+const { title, 
+    subtitle,
+    legend 
+} = Astro.props;
+---
+
+<section class="elative not-prose">
+    <div class="lg:hidden mask-l-from-50% mask-l-to-95% mask-b-from-50% mask-b-to-95%">
+        <Image
+            src={bannerImage}
+            alt="Hero banner"
+            class="mx-auto rounded-md w-full object-cover"
+            widths={[400, 768]}
+            sizes="(max-width: 767px) 400px"
+            loading="eager"
+            fetchpriority="high"
+            width={768}
+            height={450}
+            format="webp"
+        />
+    </div>
+    <div class="mx-auto flex sm:min-h-[40vh] lg:min-h-[60vh] max-w-7xl items-center justify-center">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center" aria-hidden="true">
+            <h1 class="text-5xl md:text-6xl tracking-wide font-black uppercase text-taupe-500">
+                {title}
+            </h1>
+            <h2 class="text-4xl md:text-4xl lg:mb-10 font-stretch-condensed font-medium uppercase underline decoration-pink-500">
+                {subtitle}
+            </h2>
+            <p class="mt-5 font-stretch-condensed text-gray-700 sm:text-xl">
+                {legend}
+            </p>
+        </div>
+        <div class="hidden lg:flex mask-l-from-70% mask-l-to-95% mask-b-from-50% mask-b-to-95%">
+            <Image
+                src={bannerImage}
+                alt="Hero banner"
+                class="mx-auto rounded-md w-full object-cover"
+                widths={[400, 768, 1024, 2040]}
+                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                loading="eager"
+                fetchpriority="high"
+                width={1024}
+                height={570}
+                format="webp"
+            />
+        </div>
+    </div>
+</section>
