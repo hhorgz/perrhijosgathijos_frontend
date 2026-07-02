@@ -2,17 +2,17 @@
 import '../styles/global.css';
 ---
 
-<header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow">
-    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+<header class="sticky top-0 z-50 bg-lime-100 dark:bg-gray-900 border-b-2 border-gray-900">
+    <nav aria-label="Global" class="mx-auto flex items-center p-5">
         <!-- Logo -->
-        <div class="flex lg:flex-1">
+        <div class="flex flex-1">
             <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Perrhijos y Gathijos</span>
-                <img class="h-auto w-30" src="/logo.svg" alt="" />
+                <img class="h-auto w-10" src="/icon-paw-64.png" alt="" />
             </a>
         </div>
         <!-- Mobile menu button -->
-        <div class="flex lg:hidden">
+        <div class="flex justify-end lg:hidden">
             <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400">
                 <span class="sr-only">Open main menu</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
@@ -21,15 +21,15 @@ import '../styles/global.css';
             </button>
         </div>
         <!-- Desktop menu -->
-        <el-popover-group class="hidden lg:flex lg:gap-x-12">
-            <a href="/" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Inicio</a>
-            <a href="/" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Conócelos</a>
-            <a href="/" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Refugios</a>
-            <a href="/" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Adopción</a>
-            <a href="/about" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Sobre nosotros</a>
-        </el-popover-group>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="text-sm/6 font-semibold text-gray-900 dark:text-white">
+        <div id="sitemap" class="hidden font-mono font-light text-gray-700 uppercase lg:flex lg:ml-auto lg:gap-x-12">
+            <a href="/">Inicio</a>
+            <a href="/">Conócelos</a>
+            <a href="/">Refugios</a>
+            <a href="/">Adopción</a>
+            <a href="/about">Sobre nosotros</a>
+        </div>
+        <div class="hidden lg:flex">
+            <a href="#" class="text-sm/6 py-2 px-4 ml-12 rounded-md bg-sky-300 font-semibold text-gray-900 dark:text-white">
                 Iniciar sesión
                 <span aria-hidden="true">&rarr;</span>
             </a>
