@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { Image } from "astro:assets";
-import bannerImage from "../assets/hero_banner_cat_1.jpg";
+import bannerImage from "../assets/hero_banner_dog_1.jpg";
 
 const { title, 
     subtitle,
@@ -10,45 +10,39 @@ const { title,
 ---
 
 <section class="elative not-prose">
-    <div class="lg:hidden mask-l-from-50% mask-l-to-95% mask-b-from-50% mask-b-to-95%">
-        <Image
-            src={bannerImage}
-            alt="Hero banner"
-            class="mx-auto rounded-md w-full object-cover"
-            widths={[400, 768]}
-            sizes="(max-width: 767px) 400px"
-            loading="eager"
-            fetchpriority="high"
-            width={768}
-            height={450}
-            format="webp"
-        />
+    <div id="HeroText" class="flex border-b-2 py-2 md:py-6 lg:py-8 px-3">
+        <h1 class="lg:text-8xl md:text-6xl text-2xl font-extrablack tracking-tight font-anek uppercase">
+            ¡Adopta! <span class="text-accent text-amber-400">No compres</span>
+        </h1>
     </div>
-    <div class="mx-auto flex sm:min-h-[40vh] lg:min-h-[60vh] max-w-7xl items-center justify-center">
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center" aria-hidden="true">
-            <h1 class="text-5xl md:text-6xl tracking-wide font-black uppercase text-taupe-500">
-                {title}
-            </h1>
-            <h2 class="text-4xl md:text-4xl lg:mb-10 font-stretch-condensed font-medium uppercase underline decoration-pink-500">
-                {subtitle}
-            </h2>
-            <p class="mt-5 font-stretch-condensed text-gray-700 sm:text-xl">
-                {legend}
-            </p>
-        </div>
-        <div class="hidden lg:flex mask-l-from-70% mask-l-to-95% mask-b-from-50% mask-b-to-95%">
-            <Image
-                src={bannerImage}
-                alt="Hero banner"
-                class="mx-auto rounded-md w-full object-cover"
-                widths={[400, 768, 1024, 2040]}
-                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                loading="eager"
-                fetchpriority="high"
-                width={1024}
-                height={570}
-                format="webp"
-            />
+    <div id="HeroBanner" class="bg-lime-100 border-b-2">
+        <div class="flex flex-col overflow-hidden lg:flex-row">
+            <div class="basis-2/3 border-b-2">
+                <Image
+                    src={bannerImage}
+                    alt="Hero banner"
+                    class="h-full w-full md:max-h-[720px] object-cover"
+                    loading="eager"
+                    fetchpriority="high"
+                    format="webp"
+                />
+            </div>
+            <div class="basis-1/3 lg:p-8 lg:m-8 p-4 m-2 flex flex-col justify-between">
+                <h2 class="lg:text-6xl text-4xl font-black tracking-tighter font-anek uppercase">
+                    Toma la oportunidad de cuidar una vida
+                </h2>
+                <div id="heroSubtext" class="mt-auto">
+                    <p class="text-gray-700 lg:text-lg text-base font-mono lg:py-10 pt-4 pb-8">
+                        Creemos que todos los seres vivos merecen una vida digna. Queremos aportar nuestro grano de arena dandoles visibilidad
+                        a aquellos que buscan un hogar permanente.
+                    </p>
+                    <a id="btnAbout" class="block w-full lg:w-2/3 bg-white lg:py-4 py-2 rounded-md ring-2 shadow-lg hover:bg-gray-200 transition-colors duration-300 text-center" href="/about">
+                        <span class="font-mono uppercase">
+                            Sobre nosotros
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
