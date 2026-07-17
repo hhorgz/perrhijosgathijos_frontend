@@ -1,10 +1,113 @@
 ---
 import Layout from '../components/Layout.astro';
 import Hero from '../components/Hero.astro';
+import ThreeFold from '../components/ThreeFold.astro';
+import Bifold from '../components/Bifold.astro';
+import TextBanner from '../components/TextBanner.astro';
+import Carrousel from '../components/Carrousel.astro';
+
+import catImage2 from '../assets/lupe_landscape_001.jpg';
 ---
 
 <Layout pageTitle="Perrhijos y Gathijos">
 	<main>
+		<!-- TextBanner Component -->
+		 <TextBanner title="¡Adopta!" accent="No compres" />
+
+		<!-- Hero Component -->
 		<Hero title="¡Adopta!" subtitle="No compres" legend="Toma la oportunidad de cuidar una vida" />
+
+		<!-- Threefold Component -->
+		<ThreeFold
+			title1="Respeta la vida"
+			title2="Ayúdanos a ayudar"
+		>
+			<Fragment slot="first-text">
+				<p>
+					Si la adopción no se encuentra dentro de tus planes o posibilidades, la convivencia con otros seres vivos desde
+					el respeto y la dignidad no nos cuesta nada.
+				</p>
+			</Fragment>
+
+			<Fragment slot="second-text">
+				<p>
+					Algunas de las cosas que puedes hacer:
+				</p>
+				<ol class="list-disc list-outside pl-4">
+					<li>
+						Donar directamente al refugio que elijas. <a href="refugios" class="text-black italic font-semibold no-underline hover:underline">Más información aquí</a>
+					</li>
+					<li>Si has rescatado a un peludito y quieres ayudarlo a encontrar su hogar permanente puedes
+						divulgar su información <a href="/" class="text-black italic font-semibold no-underline hover:underline">aquí</a>.
+					</li>
+					<li>
+						Hablar sobre y divulgar este sitio web con personas que están en búsqueda de un nuevo 
+						integrante para la familia.
+					</li>
+				</ol>
+			</Fragment>
+		</ThreeFold>
+
+		<!-- TextBanner Component -->
+		<TextBanner title="¿Por qué" accent="adoptar?"/>
+
+		<!-- Bifold Component -->
+		 <Bifold title="Beneficios de una compañía animal" image={catImage2}>
+			<Fragment slot="text">
+			
+				<div class="flex flex-col">
+					<div class="border-b p-2">
+						<h1 class="text-3xl">
+							Reduce el estrés
+						</h1>
+						<p class="text-lg pt-2">
+							Interactuar con una mascota reduce los niveles de cortisol
+						</p>
+					</div>
+					<div class="border-b p-2">
+						<h1 class="text-3xl">
+							Mitiga la sensacion de soledad
+						</h1>
+						<p class="text-lg pt-2">
+							Una buena relacion con tu mascota fomenta su presencia constante y afecto incondicional
+						</p>
+					</div>
+					<div class="p-2">
+						<h1 class="text-3xl">
+							Facilita la socializacion
+						</h1>
+						<p class="text-lg pt-2">
+							Una mascota puede ser un vinculo comun que se puede compartir con otras personas
+							facilitando romper el hielo
+						</p>
+					</div>
+				</div>
+			
+				<!--
+				<ol class="list-disc list-inside text-2xl">
+					<li>Reduce el estres</li>
+					<li>Combate la soledad</li>
+					<li>Amor incondicional</li>
+				</ol>
+			-->
+			</Fragment>
+
+			<Fragment slot="bottom">
+				<a id="btnAbout" class="block w-full bg-white lg:py-4 py-2 rounded-md ring-2 shadow-lg hover:bg-gray-200 transition-colors duration-300 text-center" href="/conocelos">
+					<span class="font-mono uppercase">
+						Conocelos
+					</span>
+				</a>
+			</Fragment>
+		</Bifold>
+
+		 <!-- Carrousel Component -->
+		<Carrousel title="Testimonios" subtitle="Creemos que todos merecen una oportunidad">
+
+		</Carrousel>
+
+		<Carrousel title="Patrocinadores" subtitle="Agradecemos el apoyo que hemos recibido de nuestros">
+			
+		</Carrousel>
 	</main>
 </Layout>
