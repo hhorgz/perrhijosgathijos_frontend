@@ -1,25 +1,52 @@
 ---
 import Layout from "../components/Layout.astro";
+import TextBanner from "../components/TextBanner.astro";
+import Bifold2 from "../components/Bifold2.astro";
+import Bifold3 from "../components/Bifold3.astro";
+import catPhoto from "../assets/oni_portrait_001.jpg";
+import dogPhoto from "../assets/rocko_landscape_001.jpg";
+import * as faq from "./faq.md";
+
+const compiledFaq = await faq.compiledContent();
 ---
 <Layout pageTitle="PyG: Sobre nosotros">
-    <div class="text-center pb-10 max-w-5xl mx-auto">
-        <h1 class="text-5xl md:text-6xl font-bold leading-tighter mb-4 font-heading">
-            ¿Qué es
-            <span class="text-accent">Perrhijos y Gathijos</span>
-            ?
-        </h1>
-        <p class="text-xl text-muted mb-6 text-left">
-            Se observa la gran cantidad de animales en busca de hogar y lo dificil que es mantener una base de datos actualizada a través de redes sociales,
-            como suelen hacer muchos de los refugios, grupos de rescate y personas idependientes de buen corazón. A causa de esto, nace la idea de facilitar la divulgación y acceso a esta información, 
-            con el fin de ser una herramienta de apoyo para esta situación.
-        </p>
-        <p class="text-xl text-muted mb-6 text-left">
-            Habiendo reconocido esto, <span class="font-semibold">Perrhijos y Gathijos</span> es un sitio web guatemalteco independiente, no asociado a ningún refugio o entidad, con la misión de centralizar de forma ordenada
-            la mayor cantidad de información posible de animales en busca de una familia y hogar permanente, facilitando el acceso a esta oportunidad de una forma confiable y segura.
-            
-        </p>
-        <h2 class="text-5xl md:text-6xl leading-tighter mb-4">
-            Preguntas frecuentes (FAQ)
+    <!-- TextBanner Component -->
+    <TextBanner title="Sobre nosotros" />
+
+    <!-- Bifold2 Component -->
+    <Bifold2 title="¿Qué es " accent="perrhijos y gathijos" title2="?" image={catPhoto}>
+        <Fragment slot="text">
+            <h2 class="text-2xl font-bold font-anek uppercase">
+                Reconocimiento
+            </h2>
+            <p class="text-lg text-gray-700">
+                Se observa la grantidad de animales en busca de hogar y lo difícil que es mantener una base de datos actualizada
+                a través de redes sociales, como suelen hacer muchos de los refugios, grupos de rescate y personas de buen corazón.
+                A causa de esto nace la idea de facilitar la divulgación y acceso a esta información, con el fin de ser una 
+                herramienta de apoyo a esta situación
+            </p>
+        </Fragment>
+    </Bifold2>
+
+    <!-- Bifold3 Component -->
+    <Bifold3 title="Nuestra misión" image={dogPhoto}>
+        <Fragment slot="text">
+            <p>
+                Centralizar de forma ordenada y actualizada la mayor cantidad de información de animales guatemaltecos
+                en búsqueda de una familia y hogar permanente para lograr una mayor visibilidad y divulgación.
+            </p>
+        </Fragment>
+    </Bifold3>
+    
+    <div class="m-10">
+        <h3 class="text-xl text-center uppercase leading-tighter mb-4">
+            Preguntas frecuentes
+        </h3>
+        <h2 class="text-6xl text-center text-headline uppercase font-anek tracking-tighter">
+            FAQ
         </h2>
+        <div class="pl-20 pr-20">
+            <Fragment set:html={compiledFaq} />
+        </div>
     </div>
 </Layout>

@@ -9,6 +9,9 @@
     --color-accent: var(--aw-color-accent);
     --color-default: var(--aw-color-text-default);
     --color-muted: var(--aw-color-text-muted);
+    --color-background: #B3E896;
+    --color-background-2: #F5FFD9;
+    --color-headline: #FBD467;
 
     --font-weight-extrablack: 1000; 
 
@@ -38,4 +41,8 @@
 
 @utility text-muted {
   color: var(--aw-color-text-muted);
+}
+
+h3 {
+  @apply text-lg font-black font-anek pt-2
 }
