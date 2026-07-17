@@ -1,0 +1,9 @@
+---
+const {title, accent} = Astro.props;
+---
+
+<div class="flex border py-2 md:py-6 lg:py-8 px-3">
+    <h1 class="lg:text-8xl md:text-6xl text-2xl font-extrablack tracking-tight font-anek uppercase">
+        {title} <span class="text-accent text-headline">{accent}</span>
+    </h1>
+</div>
