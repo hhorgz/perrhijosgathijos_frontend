@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+
+const { title, 
+    text,
+} = Astro.props;
+---
+
+    <div class="bg-background border py-10 lg:py-20 px-5 lg:px-20">
+        <div class="flex flex-col text-center items-center justify-between">
+            
+                <h1 class="lg:text-6xl text-4xl font-black tracking-tighter font-anek uppercase">
+                    {title}
+                </h1>
+                <p class="text-gray-700 lg:text-lg text-base font-mono py-10">
+                    {text}
+                </p>
+                <slot name="bottom" />
+
+        </div>
+    </div>

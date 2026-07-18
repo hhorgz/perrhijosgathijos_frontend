@@ -1,0 +1,127 @@
+---
+import Layout from "../components/Layout.astro";
+import TextBanner from "../components/TextBanner.astro";
+import Trifold2 from "../components/Trifold2.astro";
+import Hero2 from "../components/Hero2.astro";
+---
+<Layout>
+
+    <!-- TextBanner Component -->
+    <TextBanner title="Buscando" accent="adoptar" />
+
+    <!-- Trifold2 Component -->
+    <Trifold2 title1="Adoptar" title2="Dar en adopción" title3="¿Representas un refugio o grupo de rescate?">
+
+        <!-- First Section -->
+        <Fragment slot="first-text">
+            <table>
+                <tbody class="table-auto">
+                    <tr>
+                        <td class="py-5">
+                            Felicidades
+                        </td>
+                    </tr>
+                    <tr class="border-y-1">
+                        <td class="py-5">
+                            Un nuevo integrante para tu familia te espera
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-5">
+                            Puedes tener mayor información de los animales que se encuentran en adopción en la
+                            siguiente sección
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </Fragment>
+
+        <Fragment slot="first-bottom">
+            <a class="button-second w-full">
+                <span class="font-mono uppercase">
+                    Conócelos
+                </span>
+            </a>
+        </Fragment>
+
+        <!-- Second Section -->
+        <Fragment slot="second-text">
+            <table>
+                <tbody class="table-auto">
+                    <tr>
+                        <td class="py-5">
+                            Entendemos que separarse es difícil
+                        </td>
+                    </tr>
+                    <tr class="border-y-1">
+                        <td class="py-5">
+                            Estás ayudando en el rescate de una vida y estas acciones son las que generan cambios
+                            importantes en la sociedad.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-5">
+                            Para compartir la información de la mascota, necesitas crear una cuenta y un pequeño pago
+                            que nos ayuda a mantener vivo este sitio.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </Fragment>
+        <Fragment slot="second-bottom">
+            <a class="button-second w-full">
+                <span class="font-mono uppercase">
+                    Inicia sesión
+                </span>
+            </a>
+        </Fragment>
+        
+
+        <!-- Third Section -->
+        <Fragment slot="third-text">
+            <table>
+                <tbody class="table-auto">
+                    <tr>
+                        <td class="py-5">
+                            ¡Gracias!
+                        </td>
+                    </tr>
+                    <tr class="border-y-1">
+                        <td class="py-5">
+                            Reconocemos la importancia de tus labores por lo que queremos apoyar de alguna manera
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-5">
+                            Puedes publicar la información de tus animales rescatados sin ningún costo. Ponte en contacto
+                            con nosotros para mayor información
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </Fragment>
+        <Fragment slot="third-bottom">
+            <a class="button-second w-full">
+                <span class="font-mono uppercase">
+                    Contacto
+                </span>
+            </a>
+        </Fragment>
+    </Trifold2>
+
+    <!-- Hero2 Component -->
+     <Hero2 
+        title="¿Aún no tienes una cuenta?"
+        text="Recuerda que únicamente necesitas crear una cuenta si lo que deseas es publicar 
+        información de un animal que tú estés dando en adopción">
+
+        <Fragment slot="bottom">
+            <a class="button-third w-1/8">
+                <span class="font-mono uppercase">
+                    Registrate
+                </span>
+            </a>
+        </Fragment>
+     </Hero2>
+
+</Layout>
