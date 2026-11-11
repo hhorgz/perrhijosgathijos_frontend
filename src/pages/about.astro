@@ -38,14 +38,14 @@ const compiledFaq = await faq.compiledContent();
         </Fragment>
     </Bifold3>
     
-    <div class="m-10">
-        <h2 class="text-xl text-center uppercase leading-tighter mb-4">
+    <div class="py-10">
+        <h2 class="text-xl text-center uppercase leading-tighter pb-2">
             Preguntas frecuentes
         </h2>
         <h2 class="text-6xl text-center text-headline uppercase font-anek tracking-tighter">
             FAQ
         </h2>
-        <div class="pl-20 pr-20">
+        <div class="lg:px-40 md:px-20 px-10">
             <Fragment set:html={compiledFaq} />
         </div>
     </div>
